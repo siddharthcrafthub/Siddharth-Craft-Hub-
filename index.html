@@ -1,177 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siddharth Craft Hub</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f7f3ee;
-      color: #333;
-    }
-
-    header {
-      background: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      font-size: 15px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background: white;
-    }
-
-    .hero h2 {
-      font-size: 35px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 25px;
-      background: #25d366;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .section h2 {
-      font-size: 28px;
-      margin-bottom: 25px;
-    }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      width: 280px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 21px;
-    }
-
-    .card p {
-      line-height: 1.5;
-    }
-
-    .contact {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .contact h2 {
-      margin-bottom: 15px;
-    }
-
-    .contact p {
-      margin: 8px 0;
-    }
-
-    footer {
-      background: #111;
-      color: #aaa;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siddharth Craft Hub | Gifts, Crafts & Photo Memories</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#fff7fb;color:#333}
+header{background:linear-gradient(135deg,#171717,#3a1835);color:white;text-align:center;padding:35px 20px}
+header h1{font-size:38px;margin-bottom:10px}
+header p{font-size:17px;opacity:.9}
+nav{background:white;padding:15px;text-align:center;box-shadow:0 2px 10px #ddd;position:sticky;top:0;z-index:10}
+nav a{text-decoration:none;color:#333;margin:0 12px;font-weight:bold}
+.hero{text-align:center;padding:55px 20px;background:linear-gradient(135deg,#ffe5f0,#fff)}
+.hero h2{font-size:36px;margin-bottom:15px}
+.hero p{max-width:650px;margin:auto;line-height:1.6}
+.whatsapp{display:inline-block;margin-top:25px;background:#25D366;color:white;padding:14px 25px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 5px 15px #bbb}
+section{padding:50px 20px;max-width:1200px;margin:auto}
+.section-title{text-align:center;font-size:30px;margin-bottom:35px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px}
+.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #ddd;transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.card-image{height:190px;display:flex;align-items:center;justify-content:center;font-size:70px;background:linear-gradient(135deg,#ffe0ec,#f5e5ff)}
+.card-content{padding:20px;text-align:center}
+.card h3{font-size:21px;margin-bottom:10px}
+.card p{color:#666;line-height:1.5;min-height:48px}
+.price{display:block;font-size:20px;font-weight:bold;margin:15px 0;color:#a52a6b}
+.order{display:inline-block;background:#111;color:white;padding:10px 18px;border-radius:25px;text-decoration:none}
+.about{background:#fff;border-radius:20px;box-shadow:0 5px 20px #ddd;padding:35px;text-align:center;line-height:1.8}
+.contact{text-align:center;background:#21121e;color:white;max-width:none}
+.contact h2{margin-bottom:15px}
+footer{background:#111;color:white;text-align:center;padding:20px;font-size:14px}
+@media(max-width:600px){header h1{font-size:30px}.hero h2{font-size:28px}nav a{display:inline-block;margin:6px;font-size:14px}}
+</style>
 </head>
-
 <body>
 
-  <header>
-    <h1>Siddharth Craft Hub</h1>
-    <p>Creative Gifts • Crafts • Photo Albums</p>
-  </header>
+<header>
+<h1>✨ Siddharth Craft Hub ✨</h1>
+<p>Creative Gifts • Handmade Crafts • Photo Memories</p>
+</header>
 
-  <section class="hero">
-    <h2>Welcome to Siddharth Craft Hub</h2>
-    <p>Beautiful handmade crafts, gifts and photo albums for your special moments.</p>
-    <a class="btn" href="https://wa.me/917503021326">
-      Order on WhatsApp
-    </a>
-  </section>
+<nav>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <section class="section">
-    <h2>Our Products</h2>
+<div class="hero">
+<h2>Make Every Memory Special ❤️</h2>
+<p>Beautiful customised gifts, handmade crafts, Polaroid photos, photo albums, jewellery and much more — made specially for your favourite people and special occasions.</p>
+<a class="whatsapp" href="https://wa.me/917503021326?text=Hello%20Siddharth%20Craft%20Hub%2C%20I%20want%20to%20place%20an%20order." target="_blank">📱 Order on WhatsApp</a>
+</div>
 
-    <div class="cards">
+<section id="products">
+<h2 class="section-title">🎁 Our Products</h2>
+<div class="products">
 
-      <div class="card">
-        <h3>🎁 Gift Items</h3>
-        <p>Special gifts for birthdays, anniversaries and memorable occasions.</p>
-      </div>
+<div class="card"><div class="card-image">👕</div><div class="card-content"><h3>Custom Print T-Shirt</h3><p>Your photo, name or special message printed on a T-shirt.</p><span class="price">Starting ₹399</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Custom%20Print%20T-Shirt." target="_blank">Order Now</a></div></div>
 
-      <div class="card">
-        <h3>🎨 Handmade Crafts</h3>
-        <p>Creative and beautiful handmade craft items made with care.</p>
-      </div>
+<div class="card"><div class="card-image">📸</div><div class="card-content"><h3>Polaroid Photos</h3><p>Turn your favourite memories into beautiful Polaroid-style prints.</p><span class="price">Starting ₹99</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20Polaroid%20Photos." target="_blank">Order Now</a></div></div>
 
-      <div class="card">
-        <h3>📸 Photo Albums</h3>
-        <p>Customized photo albums to preserve your favourite memories.</p>
-      </div>
+<div class="card"><div class="card-image">📔</div><div class="card-content"><h3>Custom Photo Album</h3><p>A personalised album filled with your favourite memories.</p><span class="price">Starting ₹599</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Custom%20Photo%20Album." target="_blank">Order Now</a></div></div>
 
-      <div class="card">
-        <h3>🖼️ Photo Frames</h3>
-        <p>Beautiful customized photo frames for your home and loved ones.</p>
-      </div>
+<div class="card"><div class="card-image">💎</div><div class="card-content"><h3>Girls Jewellery</h3><p>Trendy earrings, bracelets, necklaces and cute accessories.</p><span class="price">Starting ₹149</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20Girls%20Jewellery." target="_blank">Order Now</a></div></div>
 
-    </div>
-  </section>
+<div class="card"><div class="card-image">🎁</div><div class="card-content"><h3>Gift Hampers</h3><p>Beautiful customised gift boxes for birthdays and special occasions.</p><span class="price">Starting ₹499</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Gift%20Hamper." target="_blank">Order Now</a></div></div>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Dadri, Gautam Buddha Nagar, Uttar Pradesh - 203207</p>
-    <p>📱 7503021326</p>
-    <p>🎁 Gifts & Crafting</p>
-  </section>
+<div class="card"><div class="card-image">🖼️</div><div class="card-content"><h3>Photo Frames</h3><p>Custom photo frames made for your favourite memories.</p><span class="price">Starting ₹299</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Custom%20Photo%20Frame." target="_blank">Order Now</a></div></div>
 
-  <footer>
-    © 2026 Siddharth Craft Hub. All Rights Reserved.
-  </footer>
+<div class="card"><div class="card-image">🌸</div><div class="card-content"><h3>Handmade Crafts</h3><p>Creative handmade gifts carefully made with love.</p><span class="price">Starting ₹199</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Handmade%20Craft." target="_blank">Order Now</a></div></div>
 
+<div class="card"><div class="card-image">💐</div><div class="card-content"><h3>Photo Bouquets</h3><p>Beautiful bouquets combined with your favourite photos.</p><span class="price">Starting ₹399</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Photo%20Bouquet." target="_blank">Order Now</a></div></div>
+
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">💖 About Siddharth Craft Hub</h2>
+<div class="about">
+<p>Welcome to <b>Siddharth Craft Hub</b> — your place for creative, personalised and memorable gifts.</p>
+<p>We create customised gifts for birthdays, anniversaries, friendships, celebrations and all your special moments.</p>
+<p>Have a special idea? Tell us on WhatsApp and we will help you create something unique.</p>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>📱 Ready to Order?</h2>
+<p>Send us your requirements and photos on WhatsApp.</p>
+<a class="whatsapp" href="https://wa.me/917503021326?text=Hello%20Siddharth%20Craft%20Hub%2C%20I%20want%20to%20place%20an%20order." target="_blank">💬 Chat on WhatsApp</a>
+</section>
+
+<footer>© 2026 Siddharth Craft Hub • Creative Gifts & Memories</footer>
 </body>
 </html>
