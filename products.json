@@ -1,0 +1,122 @@
+[
+  {
+    "id": "pk-premium",
+    "cat": "Photo Gifts",
+    "name": "Premium Photo Keychain",
+    "price": 299,
+    "old": 399,
+    "image": "product-01.jpg",
+    "badge": "Bestseller",
+    "desc": "Personalised photo keychain with a premium clear finish. Upload your favourite photo at checkout."
+  },
+  {
+    "id": "memory-frame",
+    "cat": "Photo Frames",
+    "name": "Memory Story Frame",
+    "price": 999,
+    "old": 1299,
+    "image": "product-02.jpg",
+    "badge": "Premium",
+    "desc": "Elegant multi-photo memory frame designed for birthdays, anniversaries and special moments."
+  },
+  {
+    "id": "eid-hamper",
+    "cat": "Gift Hampers",
+    "name": "Premium Celebration Gift Hamper",
+    "price": 1699,
+    "old": 2199,
+    "image": "product-03.jpg",
+    "badge": "Gift Pick",
+    "desc": "A premium curated celebration hamper with jewellery and gifting essentials."
+  },
+  {
+    "id": "men-hamper",
+    "cat": "Gift Hampers",
+    "name": "Executive Premium Gift Box",
+    "price": 1999,
+    "old": 2499,
+    "image": "product-04.jpg",
+    "badge": "Luxury",
+    "desc": "Premium personalised gift box for birthdays, anniversaries and special occasions."
+  },
+  {
+    "id": "mag-4",
+    "cat": "Photo Magazines",
+    "name": "Photo Magazine — 4 Pages",
+    "price": 249,
+    "old": 349,
+    "image": "product-05.jpg",
+    "badge": "Starter",
+    "desc": "Compact custom photo magazine. Great for a small memory story or mini gift."
+  },
+  {
+    "id": "mag-8",
+    "cat": "Photo Magazines",
+    "name": "Photo Magazine — 8 Pages",
+    "price": 449,
+    "old": 599,
+    "image": "product-06.jpg",
+    "badge": "Popular",
+    "desc": "Premium 8-page photo magazine with your selected memories and custom layout."
+  },
+  {
+    "id": "mag-12",
+    "cat": "Photo Magazines",
+    "name": "Photo Magazine — 12 Pages",
+    "price": 649,
+    "old": 799,
+    "image": "product-07.jpg",
+    "badge": "Premium",
+    "desc": "Extended 12-page memory magazine for birthdays, couples, family and celebrations."
+  },
+  {
+    "id": "album-spiral",
+    "cat": "Photo Albums",
+    "name": "Premium Spiral Photo Album",
+    "price": 799,
+    "old": 999,
+    "image": "product-08.jpg",
+    "badge": "Trending",
+    "desc": "Hand-finished spiral album for preserving favourite travel, family and celebration photos."
+  },
+  {
+    "id": "album-16",
+    "cat": "Photo Albums",
+    "name": "Classic Memory Album — 16 Pages",
+    "price": 899,
+    "old": 1199,
+    "image": "product-06.jpg",
+    "badge": "Premium",
+    "desc": "A premium keepsake album with a clean, modern presentation for your memories."
+  },
+  {
+    "id": "album-24",
+    "cat": "Photo Albums",
+    "name": "Deluxe Memory Album — 24 Pages",
+    "price": 1199,
+    "old": 1599,
+    "image": "product-05.jpg",
+    "badge": "Deluxe",
+    "desc": "Large premium memory album for family stories, anniversaries and milestone events."
+  },
+  {
+    "id": "custom-frame",
+    "cat": "Photo Frames",
+    "name": "Custom Collage Frame",
+    "price": 1299,
+    "old": 1699,
+    "image": "product-02.jpg",
+    "badge": "Custom",
+    "desc": "Custom collage-style frame. Upload your photos and tell us the occasion at checkout."
+  },
+  {
+    "id": "photo-story",
+    "cat": "Photo Gifts",
+    "name": "Personalised Photo Story Book",
+    "price": 1099,
+    "old": 1399,
+    "image": "product-07.jpg",
+    "badge": "New",
+    "desc": "A premium photo story product made around your favourite moments and captions."
+  }
+]

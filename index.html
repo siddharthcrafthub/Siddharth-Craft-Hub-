@@ -1,96 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Siddharth Craft Hub | Gifts, Crafts & Photo Memories</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
-body{background:#fff7fb;color:#333}
-header{background:linear-gradient(135deg,#171717,#3a1835);color:white;text-align:center;padding:35px 20px}
-header h1{font-size:38px;margin-bottom:10px}
-header p{font-size:17px;opacity:.9}
-nav{background:white;padding:15px;text-align:center;box-shadow:0 2px 10px #ddd;position:sticky;top:0;z-index:10}
-nav a{text-decoration:none;color:#333;margin:0 12px;font-weight:bold}
-.hero{text-align:center;padding:55px 20px;background:linear-gradient(135deg,#ffe5f0,#fff)}
-.hero h2{font-size:36px;margin-bottom:15px}
-.hero p{max-width:650px;margin:auto;line-height:1.6}
-.whatsapp{display:inline-block;margin-top:25px;background:#25D366;color:white;padding:14px 25px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 5px 15px #bbb}
-section{padding:50px 20px;max-width:1200px;margin:auto}
-.section-title{text-align:center;font-size:30px;margin-bottom:35px}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px}
-.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #ddd;transition:.3s}
-.card:hover{transform:translateY(-5px)}
-.card-image{height:190px;display:flex;align-items:center;justify-content:center;font-size:70px;background:linear-gradient(135deg,#ffe0ec,#f5e5ff)}
-.card-content{padding:20px;text-align:center}
-.card h3{font-size:21px;margin-bottom:10px}
-.card p{color:#666;line-height:1.5;min-height:48px}
-.price{display:block;font-size:20px;font-weight:bold;margin:15px 0;color:#a52a6b}
-.order{display:inline-block;background:#111;color:white;padding:10px 18px;border-radius:25px;text-decoration:none}
-.about{background:#fff;border-radius:20px;box-shadow:0 5px 20px #ddd;padding:35px;text-align:center;line-height:1.8}
-.contact{text-align:center;background:#21121e;color:white;max-width:none}
-.contact h2{margin-bottom:15px}
-footer{background:#111;color:white;text-align:center;padding:20px;font-size:14px}
-@media(max-width:600px){header h1{font-size:30px}.hero h2{font-size:28px}nav a{display:inline-block;margin:6px;font-size:14px}}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0d">
+<title>Siddharth Craft Hub — Premium Personalised Gifts</title>
+<meta name="description" content="Siddharth Craft Hub — premium personalised photo gifts, albums, frames, magazines and gift hampers.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-<h1>✨ Siddharth Craft Hub ✨</h1>
-<p>Creative Gifts • Handmade Crafts • Photo Memories</p>
+<div class="topbar">✨ Premium personalised gifts • Secure order details • Pan-India delivery</div>
+<header class="header">
+  <a class="brand" href="#home" aria-label="Siddharth Craft Hub home">
+    <img src="assets/logo.png" alt="Siddharth Craft Hub logo">
+    <span><b>SIDDHARTH</b><small>Craft Hub</small></span>
+  </a>
+  <nav>
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#policies">Policies</a>
+  </nav>
+  <button class="cart-btn" onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
 </header>
 
-<nav>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<div class="hero">
-<h2>Make Every Memory Special ❤️</h2>
-<p>Beautiful customised gifts, handmade crafts, Polaroid photos, photo albums, jewellery and much more — made specially for your favourite people and special occasions.</p>
-<a class="whatsapp" href="https://wa.me/917503021326?text=Hello%20Siddharth%20Craft%20Hub%2C%20I%20want%20to%20place%20an%20order." target="_blank">📱 Order on WhatsApp</a>
-</div>
-
-<section id="products">
-<h2 class="section-title">🎁 Our Products</h2>
-<div class="products">
-
-<div class="card"><div class="card-image">👕</div><div class="card-content"><h3>Custom Print T-Shirt</h3><p>Your photo, name or special message printed on a T-shirt.</p><span class="price">Starting ₹399</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Custom%20Print%20T-Shirt." target="_blank">Order Now</a></div></div>
-
-<div class="card"><div class="card-image">📸</div><div class="card-content"><h3>Polaroid Photos</h3><p>Turn your favourite memories into beautiful Polaroid-style prints.</p><span class="price">Starting ₹99</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20Polaroid%20Photos." target="_blank">Order Now</a></div></div>
-
-<div class="card"><div class="card-image">📔</div><div class="card-content"><h3>Custom Photo Album</h3><p>A personalised album filled with your favourite memories.</p><span class="price">Starting ₹599</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Custom%20Photo%20Album." target="_blank">Order Now</a></div></div>
-
-<div class="card"><div class="card-image">💎</div><div class="card-content"><h3>Girls Jewellery</h3><p>Trendy earrings, bracelets, necklaces and cute accessories.</p><span class="price">Starting ₹149</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20Girls%20Jewellery." target="_blank">Order Now</a></div></div>
-
-<div class="card"><div class="card-image">🎁</div><div class="card-content"><h3>Gift Hampers</h3><p>Beautiful customised gift boxes for birthdays and special occasions.</p><span class="price">Starting ₹499</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Gift%20Hamper." target="_blank">Order Now</a></div></div>
-
-<div class="card"><div class="card-image">🖼️</div><div class="card-content"><h3>Photo Frames</h3><p>Custom photo frames made for your favourite memories.</p><span class="price">Starting ₹299</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Custom%20Photo%20Frame." target="_blank">Order Now</a></div></div>
-
-<div class="card"><div class="card-image">🌸</div><div class="card-content"><h3>Handmade Crafts</h3><p>Creative handmade gifts carefully made with love.</p><span class="price">Starting ₹199</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Handmade%20Craft." target="_blank">Order Now</a></div></div>
-
-<div class="card"><div class="card-image">💐</div><div class="card-content"><h3>Photo Bouquets</h3><p>Beautiful bouquets combined with your favourite photos.</p><span class="price">Starting ₹399</span><a class="order" href="https://wa.me/917503021326?text=I%20want%20a%20Photo%20Bouquet." target="_blank">Order Now</a></div></div>
-
-</div>
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">CRAFTING MEMORIES • CREATING SMILES</span>
+    <h1>Make every memory<br><em>feel premium.</em></h1>
+    <p>Personalised photo gifts, premium albums, elegant frames, memory magazines and curated gift hampers.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#shop">Shop Premium Gifts</a>
+      <a class="btn ghost" href="#how">How ordering works</a>
+    </div>
+    <div class="trust"><span>✓ Customised</span><span>✓ Premium finish</span><span>✓ Order on WhatsApp</span></div>
+  </div>
+  <div class="hero-card">
+    <img src="assets/hero.jpg" alt="Premium personalised gift inspiration">
+  </div>
 </section>
 
-<section id="about">
-<h2 class="section-title">💖 About Siddharth Craft Hub</h2>
-<div class="about">
-<p>Welcome to <b>Siddharth Craft Hub</b> — your place for creative, personalised and memorable gifts.</p>
-<p>We create customised gifts for birthdays, anniversaries, friendships, celebrations and all your special moments.</p>
-<p>Have a special idea? Tell us on WhatsApp and we will help you create something unique.</p>
+<section id="categories" class="section">
+  <div class="section-head"><div><span class="eyebrow">EXPLORE</span><h2>Shop by category</h2></div></div>
+  <div class="cat-grid">
+    <button onclick="filterCat('Photo Gifts')">🎁<b>Photo Gifts</b><small>Personalised memories</small></button>
+    <button onclick="filterCat('Photo Frames')">🖼️<b>Photo Frames</b><small>Elegant wall & table pieces</small></button>
+    <button onclick="filterCat('Photo Magazines')">📖<b>Photo Magazines</b><small>Stories in print</small></button>
+    <button onclick="filterCat('Photo Albums')">📸<b>Photo Albums</b><small>Keep memories forever</small></button>
+    <button onclick="filterCat('Gift Hampers')">🎀<b>Gift Hampers</b><small>Premium gifting sets</small></button>
+  </div>
+</section>
+
+<section id="shop" class="section shop">
+  <div class="section-head">
+    <div><span class="eyebrow">PREMIUM COLLECTION</span><h2>Featured products</h2></div>
+    <div class="filters">
+      <button class="filter active" onclick="filterCat('All')">All</button>
+      <button class="filter" onclick="filterCat('Photo Gifts')">Photo Gifts</button>
+      <button class="filter" onclick="filterCat('Photo Frames')">Frames</button>
+      <button class="filter" onclick="filterCat('Photo Magazines')">Magazines</button>
+      <button class="filter" onclick="filterCat('Photo Albums')">Albums</button>
+      <button class="filter" onclick="filterCat('Gift Hampers')">Hampers</button>
+    </div>
+  </div>
+  <div id="productGrid" class="product-grid"></div>
+</section>
+
+<section id="how" class="section how">
+  <div class="section-head"><div><span class="eyebrow">SIMPLE ORDERING</span><h2>Order in 4 steps</h2></div></div>
+  <div class="steps">
+    <div><b>01</b><h3>Choose</h3><p>Select a product and open its dedicated product page.</p></div>
+    <div><b>02</b><h3>Customise</h3><p>Add quantity, customer details and a photo for custom products.</p></div>
+    <div><b>03</b><h3>Pay</h3><p>UPI payment is available. COD is currently not available.</p></div>
+    <div><b>04</b><h3>Confirm</h3><p>Save your order ID and contact us on WhatsApp for order confirmation.</p></div>
+  </div>
+</section>
+
+<section id="policies" class="section policies">
+  <div class="policy-box"><span class="eyebrow">IMPORTANT</span><h2>Order & payment policy</h2>
+    <ul>
+      <li><b>COD not available.</b> Orders require online UPI payment.</li>
+      <li><b>No cancellation</b> after an order is confirmed/production has started.</li>
+      <li><b>No refund</b> on personalised/custom products. If an item arrives damaged, contact us promptly with photos.</li>
+      <li>Custom products may require photo upload and design confirmation.</li>
+      <li>Order support / booking: <a href="https://wa.me/917503021326" target="_blank" rel="noopener">+91 7503021326</a></li>
+      <li>UPI ID: <code>9990650567@ibl</code></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><b>SIDDHARTH CRAFT HUB</b><p>Premium personalised gifts & memories.</p></div>
+  <div><p>Order Booking: <a href="https://wa.me/917503021326" target="_blank" rel="noopener">7503021326</a></p><p>UPI: <b>9990650567@ibl</b></p></div>
+</footer>
+
+<!-- Product modal/page-like overlay -->
+<div id="productModal" class="modal hidden">
+  <div class="modal-inner">
+    <button class="close" onclick="closeProduct()">×</button>
+    <div id="productDetail"></div>
+  </div>
 </div>
-</section>
 
-<section id="contact" class="contact">
-<h2>📱 Ready to Order?</h2>
-<p>Send us your requirements and photos on WhatsApp.</p>
-<a class="whatsapp" href="https://wa.me/917503021326?text=Hello%20Siddharth%20Craft%20Hub%2C%20I%20want%20to%20place%20an%20order." target="_blank">💬 Chat on WhatsApp</a>
-</section>
+<!-- Cart drawer -->
+<div id="cartOverlay" class="overlay hidden" onclick="closeCart()"></div>
+<aside id="cartDrawer" class="drawer">
+  <div class="drawer-head"><h2>Your Cart</h2><button onclick="closeCart()">×</button></div>
+  <div id="cartItems"></div>
+  <div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+  <button class="btn primary wide" onclick="checkout()">Proceed to Checkout</button>
+  <p class="mini">COD not available • Online UPI only</p>
+</aside>
 
-<footer>© 2026 Siddharth Craft Hub • Creative Gifts & Memories</footer>
+<!-- Checkout -->
+<div id="checkoutModal" class="modal hidden">
+  <div class="modal-inner checkout">
+    <button class="close" onclick="closeCheckout()">×</button>
+    <span class="eyebrow">ORDER BOOKING</span><h2>Customer & delivery details</h2>
+    <form id="checkoutForm" onsubmit="submitOrder(event)">
+      <div class="form-grid">
+        <label>Full name<input name="name" required placeholder="Your name"></label>
+        <label>Mobile number<input name="mobile" required inputmode="tel" pattern="[0-9+\-\s]{10,15}" placeholder="10 digit mobile"></label>
+        <label>Email<input name="email" type="email" placeholder="you@example.com"></label>
+        <label>House / Street<input name="street" required placeholder="House, street, area"></label>
+        <label>City<input name="city" required placeholder="City"></label>
+        <label>State<input name="state" required placeholder="State"></label>
+        <label>PIN code<input name="pin" required inputmode="numeric" pattern="[0-9]{6}" placeholder="6 digit PIN"></label>
+        <label>Occasion / custom note<textarea name="note" placeholder="Birthday, anniversary, names, design instructions..."></textarea></label>
+      </div>
+      <div class="upload">
+        <label>📷 Photo upload (for personalised products)<input type="file" name="photo" accept="image/*" multiple></label>
+        <small>Photos stay in your browser in this demo. For live hosting, connect this form to a secure storage/backend.</small>
+      </div>
+      <div class="pay-card">
+        <h3>Online UPI payment</h3>
+        <p>Pay the order total to:</p>
+        <div class="upi"><span>UPI ID</span><b>9990650567@ibl</b><button type="button" onclick="copyUPI()">Copy</button></div>
+        <button type="button" class="btn upi-btn" onclick="openUPI()">Open UPI app</button>
+        <p class="mini">After completing payment, enter the UTR/transaction reference below.</p>
+        <label>UTR / Transaction reference<input name="utr" required placeholder="Enter payment reference"></label>
+      </div>
+      <label class="check"><input type="checkbox" required> I understand COD is unavailable and the cancellation/refund policy.</label>
+      <button class="btn primary wide" type="submit">Submit Order & Generate Order ID</button>
+    </form>
+    <div id="orderSuccess" class="success hidden"></div>
+  </div>
+</div>
+
+<script>
+const PRODUCTS = [{"id": "pk-premium", "cat": "Photo Gifts", "name": "Premium Photo Keychain", "price": 299, "old": 399, "image": "product-01.jpg", "badge": "Bestseller", "desc": "Personalised photo keychain with a premium clear finish. Upload your favourite photo at checkout."}, {"id": "memory-frame", "cat": "Photo Frames", "name": "Memory Story Frame", "price": 999, "old": 1299, "image": "product-02.jpg", "badge": "Premium", "desc": "Elegant multi-photo memory frame designed for birthdays, anniversaries and special moments."}, {"id": "eid-hamper", "cat": "Gift Hampers", "name": "Premium Celebration Gift Hamper", "price": 1699, "old": 2199, "image": "product-03.jpg", "badge": "Gift Pick", "desc": "A premium curated celebration hamper with jewellery and gifting essentials."}, {"id": "men-hamper", "cat": "Gift Hampers", "name": "Executive Premium Gift Box", "price": 1999, "old": 2499, "image": "product-04.jpg", "badge": "Luxury", "desc": "Premium personalised gift box for birthdays, anniversaries and special occasions."}, {"id": "mag-4", "cat": "Photo Magazines", "name": "Photo Magazine — 4 Pages", "price": 249, "old": 349, "image": "product-05.jpg", "badge": "Starter", "desc": "Compact custom photo magazine. Great for a small memory story or mini gift."}, {"id": "mag-8", "cat": "Photo Magazines", "name": "Photo Magazine — 8 Pages", "price": 449, "old": 599, "image": "product-06.jpg", "badge": "Popular", "desc": "Premium 8-page photo magazine with your selected memories and custom layout."}, {"id": "mag-12", "cat": "Photo Magazines", "name": "Photo Magazine — 12 Pages", "price": 649, "old": 799, "image": "product-07.jpg", "badge": "Premium", "desc": "Extended 12-page memory magazine for birthdays, couples, family and celebrations."}, {"id": "album-spiral", "cat": "Photo Albums", "name": "Premium Spiral Photo Album", "price": 799, "old": 999, "image": "product-08.jpg", "badge": "Trending", "desc": "Hand-finished spiral album for preserving favourite travel, family and celebration photos."}, {"id": "album-16", "cat": "Photo Albums", "name": "Classic Memory Album — 16 Pages", "price": 899, "old": 1199, "image": "product-06.jpg", "badge": "Premium", "desc": "A premium keepsake album with a clean, modern presentation for your memories."}, {"id": "album-24", "cat": "Photo Albums", "name": "Deluxe Memory Album — 24 Pages", "price": 1199, "old": 1599, "image": "product-05.jpg", "badge": "Deluxe", "desc": "Large premium memory album for family stories, anniversaries and milestone events."}, {"id": "custom-frame", "cat": "Photo Frames", "name": "Custom Collage Frame", "price": 1299, "old": 1699, "image": "product-02.jpg", "badge": "Custom", "desc": "Custom collage-style frame. Upload your photos and tell us the occasion at checkout."}, {"id": "photo-story", "cat": "Photo Gifts", "name": "Personalised Photo Story Book", "price": 1099, "old": 1399, "image": "product-07.jpg", "badge": "New", "desc": "A premium photo story product made around your favourite moments and captions."}];
+let cart = JSON.parse(localStorage.getItem("sch_cart") || "[]");
+
+function money(n){ return "₹" + Number(n).toLocaleString("en-IN"); }
+function saveCart(){ localStorage.setItem("sch_cart", JSON.stringify(cart)); updateCartCount(); renderCart(); }
+function updateCartCount(){ document.getElementById("cartCount").textContent = cart.reduce((a,x)=>a+x.qty,0); }
+
+function productCard(p){
+  return `<article class="product-card">
+    <div class="product-img" onclick="openProduct('${p.id}')"><img src="assets/${p.image}" alt="${p.name}"><span>${p.badge}</span></div>
+    <div class="product-info"><small>${p.cat}</small><h3>${p.name}</h3>
+      <p>${p.desc}</p><div class="price"><b>${money(p.price)}</b><del>${money(p.old)}</del></div>
+      <div class="card-actions"><button class="btn small ghost" onclick="openProduct('${p.id}')">View product</button><button class="btn small primary" onclick="addToCart('${p.id}')">Add to cart</button></div>
+    </div>
+  </article>`;
+}
+function renderProducts(list=PRODUCTS){ document.getElementById("productGrid").innerHTML = list.map(productCard).join(""); }
+function filterCat(cat){
+  const list = cat==="All" ? PRODUCTS : PRODUCTS.filter(p=>p.cat===cat);
+  renderProducts(list);
+  document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
+  const found=[...document.querySelectorAll(".filter")].find(b=>b.textContent.trim().toLowerCase()===cat.toLowerCase() || (cat==="All"&&b.textContent.trim()==="All"));
+  if(found) found.classList.add("active");
+  document.getElementById("shop").scrollIntoView({behavior:"smooth"});
+}
+function openProduct(id){
+  const p=PRODUCTS.find(x=>x.id===id);
+  const related=PRODUCTS.filter(x=>x.cat===p.cat && x.id!==p.id).slice(0,3);
+  document.getElementById("productDetail").innerHTML = `
+    <div class="detail">
+      <div class="detail-img"><img src="assets/${p.image}" alt="${p.name}"></div>
+      <div class="detail-copy"><span class="eyebrow">${p.cat}</span><h2>${p.name}</h2>
+      <p>${p.desc}</p><div class="detail-price"><b>${money(p.price)}</b><del>${money(p.old)}</del></div>
+      <ul class="feature-list"><li>Premium presentation</li><li>Personalisation supported</li><li>Photo upload at checkout</li><li>Online UPI payment</li><li>COD not available</li></ul>
+      <label>Quantity<input id="detailQty" type="number" min="1" max="20" value="1"></label>
+      <div class="card-actions"><button class="btn ghost" onclick="addDetailToCart('${p.id}')">🛒 Add to Cart</button><button class="btn primary" onclick="buyNow('${p.id}')">Buy Now</button></div>
+      <p class="mini">Need help? WhatsApp <a href="https://wa.me/917503021326" target="_blank">7503021326</a></p>
+      </div>
+    </div>
+    <div class="related"><h3>More ${p.cat}</h3><div class="related-grid">${related.map(productCard).join("")}</div></div>`;
+  document.getElementById("productModal").classList.remove("hidden");
+}
+function closeProduct(){ document.getElementById("productModal").classList.add("hidden"); }
+function addToCart(id,qty=1){ const item=cart.find(x=>x.id===id); if(item)item.qty+=qty; else cart.push({id,qty}); saveCart(); openCart(); }
+function addDetailToCart(id){ addToCart(id,Math.max(1,Number(document.getElementById("detailQty").value)||1)); }
+function buyNow(id){ addToCart(id,Math.max(1,Number(document.getElementById("detailQty").value)||1)); closeProduct(); checkout(); }
+
+function openCart(){ renderCart(); document.getElementById("cartOverlay").classList.remove("hidden"); document.getElementById("cartDrawer").classList.add("open"); }
+function closeCart(){ document.getElementById("cartOverlay").classList.add("hidden"); document.getElementById("cartDrawer").classList.remove("open"); }
+function renderCart(){
+  const box=document.getElementById("cartItems");
+  if(!cart.length){ box.innerHTML='<div class="empty">Your cart is empty.<br><a href="#shop" onclick="closeCart()">Explore premium products</a></div>'; document.getElementById("cartTotal").textContent="₹0"; return; }
+  box.innerHTML=cart.map(i=>{const p=PRODUCTS.find(x=>x.id===i.id);return `<div class="cart-item"><img src="assets/${p.image}"><div><b>${p.name}</b><small>${money(p.price)} × ${i.qty}</small><div><button onclick="changeQty('${p.id}',-1)">−</button><span>${i.qty}</span><button onclick="changeQty('${p.id}',1)">+</button><button class="remove" onclick="removeItem('${p.id}')">Remove</button></div></div></div>`}).join("");
+  document.getElementById("cartTotal").textContent=money(cart.reduce((a,i)=>a+PRODUCTS.find(p=>p.id===i.id).price*i.qty,0));
+}
+function changeQty(id,d){const x=cart.find(i=>i.id===id); if(!x)return; x.qty+=d;if(x.qty<=0)cart=cart.filter(i=>i.id!==id);saveCart();}
+function removeItem(id){cart=cart.filter(i=>i.id!==id);saveCart();}
+function checkout(){
+  if(!cart.length){alert("Please add a product first.");return;}
+  closeCart(); document.getElementById("checkoutModal").classList.remove("hidden");
+}
+function closeCheckout(){document.getElementById("checkoutModal").classList.add("hidden");}
+function total(){return cart.reduce((a,i)=>a+PRODUCTS.find(p=>p.id===i.id).price*i.qty,0);}
+function copyUPI(){navigator.clipboard?.writeText("9990650567@ibl");alert("UPI ID copied: 9990650567@ibl");}
+function openUPI(){
+  const amount=total();
+  window.location.href=`upi://pay?pa=9990650567@ibl&pn=Siddharth%20Craft%20Hub&am=${amount}&cu=INR&tn=Siddharth%20Craft%20Hub%20Order`;
+}
+function submitOrder(e){
+  e.preventDefault();
+  const fd=new FormData(e.target);
+  const orderId="SCH"+Date.now().toString().slice(-8);
+  const order={
+    orderId, createdAt:new Date().toISOString(),
+    customer:Object.fromEntries(fd.entries()),
+    items:cart.map(i=>({id:i.id,qty:i.qty,name:PRODUCTS.find(p=>p.id===i.id).name,price:PRODUCTS.find(p=>p.id===i.id).price})),
+    total:total()
+  };
+  localStorage.setItem("sch_last_order",JSON.stringify(order));
+  const msg=`Hello Siddharth Craft Hub, I have placed Order ${orderId}. Total: ${money(order.total)}. UTR: ${order.customer.utr}. Name: ${order.customer.name}.`;
+  document.getElementById("checkoutForm").classList.add("hidden");
+  const s=document.getElementById("orderSuccess");
+  s.classList.remove("hidden");
+  s.innerHTML=`<div class="success-icon">✓</div><h2>Order submitted successfully</h2><p>Your Order ID is <b>${orderId}</b>.</p><p><b>Payment reference:</b> ${order.customer.utr}</p><p class="mini">This website records the payment reference you entered; payment is not independently verified by this static website.</p><a class="btn primary wide" target="_blank" href="https://wa.me/917503021326?text=${encodeURIComponent(msg)}">Confirm on WhatsApp</a><button class="btn ghost wide" onclick="window.print()">Print / Save order</button>`;
+  cart=[];saveCart();
+}
+renderProducts(); updateCartCount(); renderCart();
+</script>
 </body>
 </html>
