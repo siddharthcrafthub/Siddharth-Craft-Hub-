@@ -118,5 +118,15 @@
     "image": "product-07.jpg",
     "badge": "New",
     "desc": "A premium photo story product made around your favourite moments and captions."
+  },
+{
+  "id": "polaroid",
+  "cat": "Photo Gifts",
+  "name": "Personalised Polaroid Photos",
+  "price": 499,
+  "old": 699,
+  "image": "product-01.jpg",
+  "badge": "New",
+  "desc": "Personalised Polaroid-style photo prints for birthdays, couples, memories and special moments."
   }
 ]
