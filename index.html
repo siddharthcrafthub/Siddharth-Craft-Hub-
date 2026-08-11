@@ -156,7 +156,7 @@ function updateCartCount(){ document.getElementById("cartCount").textContent = c
 
 function productCard(p){
   return `<article class="product-card">
-    <div class="product-img" onclick="openProduct('${p.id}')"><img src="assets/${p.image}" alt="${p.name}"><span>${p.badge}</span></div>
+    <div class="product-img" onclick="openProduct('${p.id}')"><img src="${p.image}" alt="${p.name}"><span>${p.badge}</span></div>
     <div class="product-info"><small>${p.cat}</small><h3>${p.name}</h3>
       <p>${p.desc}</p><div class="price"><b>${money(p.price)}</b><del>${money(p.old)}</del></div>
       <div class="card-actions"><button class="btn small ghost" onclick="openProduct('${p.id}')">View product</button><button class="btn small primary" onclick="addToCart('${p.id}')">Add to cart</button></div>
